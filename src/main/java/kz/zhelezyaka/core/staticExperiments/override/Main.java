@@ -1,4 +1,4 @@
-package kz.zhelezyaka.core.staticExperiments;
+package kz.zhelezyaka.core.staticExperiments.override;
 
 class Parent {
     static void staticMethod() {
