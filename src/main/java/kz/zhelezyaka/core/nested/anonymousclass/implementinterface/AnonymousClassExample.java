@@ -1,4 +1,4 @@
-package kz.zhelezyaka.core.nested.anonymousclass;
+package kz.zhelezyaka.core.nested.anonymousclass.implementinterface;
 
 import static java.lang.System.*;
 
