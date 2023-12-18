@@ -1,4 +1,4 @@
-package kz.zhelezyaka.core.clone;
+package kz.zhelezyaka.core.clone.factorymethod;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -14,28 +14,28 @@ class SomeClass {
         this.value = value;
     }
 
-    //    конструктор копирования
-    public SomeClass(SomeClass original) {
-        this.value = original.value;
+    //   фабричный метод
+    public SomeClass copyInstance(SomeClass original) {
+        return new SomeClass(original.getValue());
     }
 }
 
 public class Main {
     public static void main(String[] args) {
         // Создаем объект SomeClass
-        SomeClass original = new SomeClass(43);
+        SomeClass original = new SomeClass(77);
 
-        // Используем сгенерированный getter
+        // Используем getter
         out.println("Original value: " + original.getValue());
 
-        // Создаем копию объекта с помощью конструктора копирования
-        SomeClass copy = new SomeClass(original);
+        // Создаем копию объекта с помощью фабричного метода
+        SomeClass copy = original.copyInstance(original);
 
-        // Используем сгенерированный getter для копии
+        // Используем getter для копии
         out.println("Copy value: " + copy.getValue());
 
         // Изменяем значение в оригинале
-        original.setValue(99);
+        original.setValue(34);
 
         // Проверяем, что значение в копии осталось прежним
         out.println("Original value after modification: " + original.getValue());
