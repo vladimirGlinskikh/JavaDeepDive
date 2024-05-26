@@ -1,5 +1,6 @@
 package kz.zhelezyaka.leetcode.power_of_two_231;
 
+import kz.zhelezyaka.leetcode.algorithms.power_of_two_231.Solution;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

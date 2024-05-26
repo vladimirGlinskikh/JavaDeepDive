@@ -1,4 +1,4 @@
-package kz.zhelezyaka.leetcode.power_of_two_231;
+package kz.zhelezyaka.leetcode.algorithms.power_of_two_231;
 
 public class Solution {
     public boolean isPowerOfTwo(int n) {

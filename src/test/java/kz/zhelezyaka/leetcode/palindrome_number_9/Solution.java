@@ -12,11 +12,14 @@ public class Solution {
     public static boolean isPalindrome(int x) {
         String stringValue = String.valueOf(x);
         List<Character> list = new LinkedList<>();
+
         for (char ch : stringValue.toCharArray()) {
             list.add(ch);
         }
+
         ListIterator<Character> iterator = list.listIterator();
         ListIterator<Character> reverseIterator = list.listIterator(list.size());
+
         while (iterator.hasNext() && reverseIterator.hasPrevious()) {
             if (iterator.next() != reverseIterator.previous()) {
                 return false;

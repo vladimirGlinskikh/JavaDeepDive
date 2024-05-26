@@ -1,5 +1,7 @@
 package kz.zhelezyaka.leetcode.same_tree_100;
 
+import kz.zhelezyaka.leetcode.algorithms.same_tree_100.Solution;
+import kz.zhelezyaka.leetcode.algorithms.same_tree_100.TreeNode;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

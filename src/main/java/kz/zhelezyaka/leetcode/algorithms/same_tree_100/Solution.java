@@ -1,4 +1,4 @@
-package kz.zhelezyaka.leetcode.same_tree_100;
+package kz.zhelezyaka.leetcode.algorithms.same_tree_100;
 
 public class Solution {
     public boolean isSameTree(TreeNode p, TreeNode q) {
